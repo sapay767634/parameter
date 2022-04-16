@@ -1,0 +1,2 @@
+# parameter
+Fill listview For $i = 0 To $iCount_Right - 1     _GUICtrlListView_AddItem($hListView_Right, "Peter " &amp; $i)     _GUICtrlListView_AddSubItem($hListView_Right, $i, "Paul " &amp; $i, 1)     _GUICtrlListView_AddSubItem($hListView_Right, $i, "Mary " &amp; $i, 2) Next  ; Read ListView content into an array $aLV_List_Right = _GUIListViewEx_ReadToArray($hListView_Right, 0) ; Initiate LVEx - no count - green insert parameter - no drag image $iLV_Right_Index = _GUIListViewEx_Init($hListView_Right, $aLV_List_Right,
